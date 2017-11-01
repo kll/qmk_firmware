@@ -1,4 +1,4 @@
-#include "ergodox.h"
+#include QMK_KEYBOARD_H
 #include "debug.h"
 #include "action_layer.h"
 #include "version.h"
@@ -26,10 +26,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|  L1  |           |  L2  |------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |  /   | RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |LCtrl | LGui | LAlt | Hyper| Meh  |                                       | Left | Down |  Up  | Right|  Task  |
+ *   |LCtrl | LGui | LAlt | Hyper| App  |                                       | Left | Down |  Up  | Right|  Task  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
- *                                        | Home | End  |       | App  |  Esc |
+ *                                        | Home | End  |       | Hyper| Meh  |
  *                                 ,------|------|------|       |------+--------+------.
  *                                 | LAlt | LCtrl| PgUp |       | PtScr|        |      |
  *                                 | tap  | tap  |------|       |------| Enter  | Space|
